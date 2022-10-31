@@ -3,7 +3,6 @@ Restart
 
 Dates: 102822
 
-Author: Miles D. Ackerman (undergraduate during the summer of 2022). Email: miles.ackerman1@gmail.com
 
 General info:
 This file makes a GUI to control the room-temp NV center-based measurement setup in LISE room B00 in the Lukin Group in the Harvard PHY dept. The setup
