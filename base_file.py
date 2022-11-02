@@ -1,8 +1,11 @@
 """
-Restart
+Restart from base mda_b00_gui file
 
-Dates: 102822
+For ISEC_rm_017_CSLM
 
+Dates: 102822 -> 103022
+
+Author: Miles D. Ackerman (undergraduate during the summer of 2022). Email: miles.ackerman1@gmail.com
 
 General info:
 This file makes a GUI to control the room-temp NV center-based measurement setup in LISE room B00 in the Lukin Group in the Harvard PHY dept. The setup
@@ -79,8 +82,8 @@ import matplotlib as mpl
 import matplotlib.pyplot as plt
 
 # QCoDeS -this only imports needed classes from a document not other QCoDeS functionality
-from qcodes_contrib_drivers.drivers.NationalInstruments.DAQ import *
-from qcodes_contrib_drivers.drivers.NationalInstruments.class_file import *
+# from qcodes_contrib_drivers.drivers.NationalInstruments.DAQ import *
+# from qcodes_contrib_drivers.drivers.NationalInstruments.class_file import *
 
 # PyQt5, this is the framework that builds the GUI
 import PyQt5
