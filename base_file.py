@@ -222,7 +222,7 @@ class Make_About_Window(QtWidgets.QMainWindow): # create the "Make_About_Window"
         about_window_content_line_2.move(0 + about_window_left_justify_adjust, 15 + about_window_top_justify_adjust)
         about_window_content_line_2.resize(300, 15)
 
-        about_window_content_line_3 = QLabel("Last modified: 090222", self)
+        about_window_content_line_3 = QLabel("Last modified: 110222", self)
         about_window_content_line_3.move(0 + about_window_left_justify_adjust, 30 + about_window_top_justify_adjust)
         about_window_content_line_3.resize(300, 15)
 
