@@ -1,22 +1,5 @@
 # base_file.py
 
-# TODO: remove unused imports
-# TODO: update naming conventions throughout scripts and entire file
-# TODO: can about window be set to the center of the screen regardles of the position of the main window?
-# TODO: fix allowing scans to be run one after the other. Will "Try... Except" work?
-# 090122 this above is fixed. However, the fix lies in the implementation of validating the resolution input. If the input-validation framework changes 
-# (as it should bc it is limited to only checking reoslution now) the allowed-repeated-scanning functionality MUST be re-written
-# TODO: cont. below
-"""
-Input validation (resolution, min and max voltages for axes)
-Multile scans w/out closing programs (scan_galvo.close) (use Try... Except?) -fixed; not ideal
-Saving scan data/images
-Progress (scanning) bar
-Live plot updating?
-Point size minimum based on wavelength of used laser
-input validation method is currently only limited to checking resolutions setting per each scan
-"""
-
 #################################################################### imports ###################################################################################
 
 # general packages
@@ -31,7 +14,7 @@ import matplotlib
 matplotlib.use('Qt5Agg')
 from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg
 import matplotlib as mpl
-import matplotlib.pyplot as plts
+import matplotlib.pyplot as plt
 
 # PyQt5, this is the framework that builds the GUI
 import PyQt5
@@ -50,17 +33,6 @@ any_script_run_one_Q = False # for multiple scanning
 get_todays_date = date.today() # this is used for creating the final plot's plot labels
 
 todays_date = get_todays_date.strftime("%m%d%Y") # this is used for creating the final plot's plot labels
-
-############################# OLD ####################################
-# def clear_plot():
-#     print("Hello world!")
-#     plot_res = 3.89
-#     self.sc = MplCanvas(self, width = plot_res, height = plot_res, dpi = 110)                         # changing dpi does something to scale of figure
-#     self.sc.move(2, 2)
-#     self.sc.setParent(right_window)
-#     self.sc.axes.xaxis.set_tick_params(labelsize = 8)
-#     self.sc.axes.yaxis.set_tick_params(labelsize = 8)
-###################################################################
 
 ################################################################## "Make_Error_Window_2" Class ######################################################################
 class Make_Error_Window_2(QtWidgets.QMainWindow): # create the "Make_Error_Window_2" for displaying a new window with error content

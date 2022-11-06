@@ -55,11 +55,3 @@ cDAQ chasis (there are four available slots)
 ## New info
 
 Text here
-
-## old comments from mda_b0_gui
-
-<!--
-# QCoDeS -this only imports needed classes from a document not other QCoDeS functionality
-# from qcodes_contrib_drivers.drivers.NationalInstruments.DAQ import *
-# from qcodes_contrib_drivers.drivers.NationalInstruments.class_file import *
--->
