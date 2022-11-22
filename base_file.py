@@ -5,9 +5,12 @@
 # general packages
 import sys
 import nidaqmx
-import numpy
+from nidaqmx.constants import AcquisitionType
+import numpy as np
 import pyqtgraph as pg
 from datetime import date
+
+import qcodes_contrib_drivers.drivers.NationalInstruments.DAQ as test
 
 # MatPlotLib plotting packages
 import matplotlib
@@ -239,8 +242,8 @@ class Child(QtWidgets.QWidget):#, **kwargs): # kwargs needed?
 
             saving_scan_error_bool = False # setting up a bool value for error checking below
 
-            # print("save_scan_data_fnc called")                                               # delete later
-            # print("@address :" + save_scan_data_qlineedit.text())                                               # delete later
+            print("save_scan_data_fnc called")                                               # delete later
+            print("@address :" + save_scan_data_qlineedit.text())                                               # delete later
 
             # while loop for error checking if address to save data at has length > 0
             while saving_scan_error_bool is False:
@@ -255,7 +258,8 @@ class Child(QtWidgets.QWidget):#, **kwargs): # kwargs needed?
 
                     saving_scan_error_bool == True # adjusting the value of the current bool to True
                     address_to_save_scan_data_at = save_scan_data_qlineedit.text() # creating a variable as the specified (now error-checked) address
-                    numpy.save(str(address_to_save_scan_data_at), most_recent_data_array) # saving the correct data array
+                    np.save(str(address_to_save_scan_data_at), most_recent_data_array) # saving the correct data array
+                    print("saved")
                     break # data has been successfully save; so exit checking loop
 
         ########### XY scanning #############
@@ -311,7 +315,7 @@ C:/Users/lukin2dmaterials/miniconda3/envs/qcodes/Lib/site-packages/qcodes_contri
             scan_galvo_ao_channels = {f'{scan_galvo_card_name}/ao{i}': i for i in range(4)}
 
             # defining the instrument (ni_9263)
-            scan_galvo = DAQAnalogOutputs("name_two", scan_galvo_card_name, scan_galvo_ao_channels)
+            scan_galvo = test.DAQAnalogOutputs("name_two", scan_galvo_card_name, scan_galvo_ao_channels)
 
             ############################################################################### def other variables #####################################################################
 
