@@ -8,7 +8,7 @@ About: ISEC room 017 CSLM control software
 
 ## Old text from b00_gui:
 
-Dates: 102822 -> 103022
+Dates: 102822 -> 112222
 
 Author: Miles D. Ackerman (undergraduate during the summer of 2022). Email: miles.ackerman1@gmail.com
 
