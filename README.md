@@ -1,16 +1,16 @@
-<em>Please see [this new repository](https://github.com/Orzel017/017_CSLM_control). This repository has moved!</em>
+# <em>Please see [this new repository](https://github.com/Orzel017/017_CSLM_control). This repository has moved!</em>
 
 
 
-# 017_CSLM_control
+### 017_CSLM_control
 
 About: ISEC room 017 CSLM control software
 
-## Dates:
+#### Dates:
 
 102822 $\rightarrow{}$ 110322
 
-## Old text from b00_gui:
+#### Old text from b00_gui:
 
 Dates: 102822 -> 112222
 
